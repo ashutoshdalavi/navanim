@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px rgb(207, 194, 194);
+    padding: 5px;
+}
+img{
+    height: 100%;  
+}
+.left{
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;  
+}
+.center{
+    width: 55vw;
+}
+.center ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.center ul li{
+    list-style: none;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all ease .5s;
+}
+.center ul li:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.right{
+    height: 100%;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.animation{
+    height: 100px;
+    width: 200px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    animation:  anim1 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim1{
+    0%{
+        position: relative;
+        left: 0;
+        color: red;
+    
+    }
+    /*25%{
+        position: relative;
+        left: 250px;
+    */
+    50%{
+        position: relative;
+        left: 1200px;
+        color: blue;
+        
+    }
+    /*75%{
+        position: relative;
+        left: 750px;
+    }*/
+    100%{
+        position: relative;
+        left: 0px;
+        color: red;
+        
+    }
+}
